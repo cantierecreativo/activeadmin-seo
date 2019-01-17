@@ -19,16 +19,16 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activeadmin>, ["~> 0.5.0"])
+      s.add_runtime_dependency(%q<activeadmin>, [">= 0.5.0"])
       s.add_runtime_dependency(%q<activeadmin-dragonfly>, [">= 0"])
       s.add_runtime_dependency(%q<friendly_id>, ["~> 4.0.0"])
     else
-      s.add_dependency(%q<activeadmin>, ["~> 0.5.0"])
+      s.add_dependency(%q<activeadmin>, [">= 0.5.0"])
       s.add_dependency(%q<activeadmin-dragonfly>, [">= 0"])
       s.add_dependency(%q<friendly_id>, ["~> 4.0.0"])
     end
   else
-    s.add_dependency(%q<activeadmin>, ["~> 0.5.0"])
+    s.add_dependency(%q<activeadmin>, [">= 0.5.0"])
     s.add_dependency(%q<activeadmin-dragonfly>, [">= 0"])
     s.add_dependency(%q<friendly_id>, ["~> 4.0.0"])
   end
